@@ -11,7 +11,7 @@ namespace UWPTest.Views {
         public HomeView() {
             InitializeComponent();
 
-            this.ToolbarItems.Add(new ToolbarItem("ABC", "", () => { }, ToolbarItemOrder.Default));
+            //this.ToolbarItems.Add(new ToolbarItem("ABC", "", () => { }, ToolbarItemOrder.Default));
         }
     }
 }
