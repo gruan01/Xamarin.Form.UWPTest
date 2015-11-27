@@ -8,5 +8,5 @@
               local:MDLocator.Detail="{Binding Detail}"
                   
               >
-
+  
 </MasterDetailPage>

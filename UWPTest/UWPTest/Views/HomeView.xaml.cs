@@ -10,6 +10,8 @@ namespace UWPTest.Views {
     public partial class HomeView : ContentPage {
         public HomeView() {
             InitializeComponent();
+
+            this.ToolbarItems.Add(new ToolbarItem("ABC", "", () => { }, ToolbarItemOrder.Default));
         }
     }
 }

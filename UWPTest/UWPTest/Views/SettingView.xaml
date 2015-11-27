@@ -2,7 +2,23 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="UWPTest.Views.SettingView"
+             xmlns:ctrls="clr-namespace:UWPTest.Controls;assembly=UWPTest"
              Title="Setting"
              >
-  <Button Text="TTT" />
+
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition />
+      <RowDefinition Height="1" />
+      <RowDefinition Height="auto" />
+    </Grid.RowDefinitions>
+
+    <ctrls:CycleBox Radius="30" BackgroundColor="Green">
+      <Label Text="T" />
+    </ctrls:CycleBox>
+
+    <BoxView HeightRequest="0.5" Color="Gray" Grid.Row="1" />
+    <Button Text="Exit" Grid.Row="2" />
+  </Grid>
+  
 </ContentPage>

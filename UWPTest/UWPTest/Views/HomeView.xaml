@@ -5,4 +5,5 @@
              Title="Home"
              >
   <Label Text="Home" VerticalOptions="Center" HorizontalOptions="Center" />
+
 </ContentPage>
