@@ -38,6 +38,7 @@ namespace UWPTest {
         }
 
         protected override void PrepareViewFirst(NavigationPage navigationPage) {
+            //navigationPage.BarBackgroundColor = Color.Green;
             this.Container.Instance<INavigationService>(new NavigationPageAdapter(navigationPage));
         }
 

@@ -6,6 +6,8 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI;
+using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -25,6 +27,15 @@ namespace UWPTest.UWP {
             this.InitializeComponent();
 
             this.LoadApplication(new UWPTest.App(IoC.Get<WinRTContainer>()));
+
+            //var tb = ApplicationView.GetForCurrentView().TitleBar;
+            //tb.BackgroundColor = Colors.Red;// Color.FromArgb(0xff, 0x00, 0x97, 0xa7);//#0097A7
+
+            if (Windows.Foundation.Metadata.ApiInformation.IsTypePresent("Windows.UI.ViewManagement.StatusBar")) {
+                StatusBar statusBar = StatusBar.GetForCurrentView();
+                statusBar.BackgroundColor = Color.FromArgb(0xff, 0x00, 0x97, 0xa7);//#0097A7
+                statusBar.BackgroundOpacity = 1;
+            }
         }
     }
 }

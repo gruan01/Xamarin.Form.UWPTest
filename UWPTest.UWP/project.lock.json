@@ -3,24 +3,20 @@
   "version": 1,
   "targets": {
     "UAP,Version=v10.0": {
-      "Caliburn.Micro/3.0.0-beta1": {
+      "Caliburn.Micro/3.0.0-beta2": {
         "dependencies": {
-          "Caliburn.Micro.Core": "[3.0.0-beta1, 3.0.0-beta1]"
+          "Microsoft.Xaml.Behaviors.Uwp.Managed": "[1.0.2, )"
         },
         "compile": {
           "lib/uap10.0/Caliburn.Micro.Platform.Core.dll": {},
-          "lib/uap10.0/Caliburn.Micro.Platform.UWP.dll": {},
-          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
-          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
+          "lib/uap10.0/Caliburn.Micro.Platform.UWP.dll": {}
         },
         "runtime": {
           "lib/uap10.0/Caliburn.Micro.Platform.Core.dll": {},
-          "lib/uap10.0/Caliburn.Micro.Platform.UWP.dll": {},
-          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
-          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
+          "lib/uap10.0/Caliburn.Micro.Platform.UWP.dll": {}
         }
       },
-      "Caliburn.Micro.Core/3.0.0-beta1": {
+      "Caliburn.Micro.Core/3.0.0-beta2": {
         "compile": {
           "lib/portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10+uap10.0/Caliburn.Micro.dll": {}
         },
@@ -28,9 +24,9 @@
           "lib/portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10+uap10.0/Caliburn.Micro.dll": {}
         }
       },
-      "Caliburn.Micro.Xamarin.Forms/3.0.0-beta1": {
+      "Caliburn.Micro.Xamarin.Forms/3.0.0-beta2": {
         "dependencies": {
-          "Caliburn.Micro.Core": "[3.0.0-beta1, 3.0.0-beta1]",
+          "Caliburn.Micro.Core": "[3.0.0-beta2, 3.0.0-beta2]",
           "Xamarin.Forms": "[1.4.2.6355, )"
         },
         "compile": {
@@ -40,7 +36,7 @@
           "lib/portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10/Caliburn.Micro.Platform.Xamarin.Forms.dll": {}
         }
       },
-      "Microsoft.ApplicationInsights/1.2.3": {
+      "Microsoft.ApplicationInsights/2.0.0-beta3": {
         "compile": {
           "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.dll": {}
         },
@@ -48,9 +44,9 @@
           "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.dll": {}
         }
       },
-      "Microsoft.ApplicationInsights.PersistenceChannel/1.2.3": {
+      "Microsoft.ApplicationInsights.PersistenceChannel/2.0.0-beta3": {
         "dependencies": {
-          "Microsoft.ApplicationInsights": "[1.2.3, )"
+          "Microsoft.ApplicationInsights": "[2.0.0-beta3, )"
         },
         "compile": {
           "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.PersistenceChannel.dll": {}
@@ -267,6 +263,16 @@
         },
         "runtime": {
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
+        }
+      },
+      "Microsoft.Xaml.Behaviors.Uwp.Managed/1.0.2": {
+        "compile": {
+          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
+          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
+          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
         }
       },
       "System.AppContext/4.0.0": {
@@ -1604,7 +1610,7 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xamarin.Forms/2.0.0.6484": {
+      "Xamarin.Forms/2.0.0.6487": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.dll": {},
@@ -1620,24 +1626,20 @@
       }
     },
     "UAP,Version=v10.0/win10-arm": {
-      "Caliburn.Micro/3.0.0-beta1": {
+      "Caliburn.Micro/3.0.0-beta2": {
         "dependencies": {
-          "Caliburn.Micro.Core": "[3.0.0-beta1, 3.0.0-beta1]"
+          "Microsoft.Xaml.Behaviors.Uwp.Managed": "[1.0.2, )"
         },
         "compile": {
           "lib/uap10.0/Caliburn.Micro.Platform.Core.dll": {},
-          "lib/uap10.0/Caliburn.Micro.Platform.UWP.dll": {},
-          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
-          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
+          "lib/uap10.0/Caliburn.Micro.Platform.UWP.dll": {}
         },
         "runtime": {
           "lib/uap10.0/Caliburn.Micro.Platform.Core.dll": {},
-          "lib/uap10.0/Caliburn.Micro.Platform.UWP.dll": {},
-          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
-          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
+          "lib/uap10.0/Caliburn.Micro.Platform.UWP.dll": {}
         }
       },
-      "Caliburn.Micro.Core/3.0.0-beta1": {
+      "Caliburn.Micro.Core/3.0.0-beta2": {
         "compile": {
           "lib/portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10+uap10.0/Caliburn.Micro.dll": {}
         },
@@ -1645,9 +1647,9 @@
           "lib/portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10+uap10.0/Caliburn.Micro.dll": {}
         }
       },
-      "Caliburn.Micro.Xamarin.Forms/3.0.0-beta1": {
+      "Caliburn.Micro.Xamarin.Forms/3.0.0-beta2": {
         "dependencies": {
-          "Caliburn.Micro.Core": "[3.0.0-beta1, 3.0.0-beta1]",
+          "Caliburn.Micro.Core": "[3.0.0-beta2, 3.0.0-beta2]",
           "Xamarin.Forms": "[1.4.2.6355, )"
         },
         "compile": {
@@ -1657,7 +1659,7 @@
           "lib/portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10/Caliburn.Micro.Platform.Xamarin.Forms.dll": {}
         }
       },
-      "Microsoft.ApplicationInsights/1.2.3": {
+      "Microsoft.ApplicationInsights/2.0.0-beta3": {
         "compile": {
           "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.dll": {}
         },
@@ -1665,9 +1667,9 @@
           "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.dll": {}
         }
       },
-      "Microsoft.ApplicationInsights.PersistenceChannel/1.2.3": {
+      "Microsoft.ApplicationInsights.PersistenceChannel/2.0.0-beta3": {
         "dependencies": {
-          "Microsoft.ApplicationInsights": "[1.2.3, )"
+          "Microsoft.ApplicationInsights": "[2.0.0-beta3, )"
         },
         "compile": {
           "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.PersistenceChannel.dll": {}
@@ -1927,6 +1929,16 @@
         },
         "runtime": {
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
+        }
+      },
+      "Microsoft.Xaml.Behaviors.Uwp.Managed/1.0.2": {
+        "compile": {
+          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
+          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
+          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
         }
       },
       "System.AppContext/4.0.0": {
@@ -3311,7 +3323,7 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xamarin.Forms/2.0.0.6484": {
+      "Xamarin.Forms/2.0.0.6487": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.dll": {},
@@ -3327,24 +3339,20 @@
       }
     },
     "UAP,Version=v10.0/win10-arm-aot": {
-      "Caliburn.Micro/3.0.0-beta1": {
+      "Caliburn.Micro/3.0.0-beta2": {
         "dependencies": {
-          "Caliburn.Micro.Core": "[3.0.0-beta1, 3.0.0-beta1]"
+          "Microsoft.Xaml.Behaviors.Uwp.Managed": "[1.0.2, )"
         },
         "compile": {
           "lib/uap10.0/Caliburn.Micro.Platform.Core.dll": {},
-          "lib/uap10.0/Caliburn.Micro.Platform.UWP.dll": {},
-          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
-          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
+          "lib/uap10.0/Caliburn.Micro.Platform.UWP.dll": {}
         },
         "runtime": {
           "lib/uap10.0/Caliburn.Micro.Platform.Core.dll": {},
-          "lib/uap10.0/Caliburn.Micro.Platform.UWP.dll": {},
-          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
-          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
+          "lib/uap10.0/Caliburn.Micro.Platform.UWP.dll": {}
         }
       },
-      "Caliburn.Micro.Core/3.0.0-beta1": {
+      "Caliburn.Micro.Core/3.0.0-beta2": {
         "compile": {
           "lib/portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10+uap10.0/Caliburn.Micro.dll": {}
         },
@@ -3352,9 +3360,9 @@
           "lib/portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10+uap10.0/Caliburn.Micro.dll": {}
         }
       },
-      "Caliburn.Micro.Xamarin.Forms/3.0.0-beta1": {
+      "Caliburn.Micro.Xamarin.Forms/3.0.0-beta2": {
         "dependencies": {
-          "Caliburn.Micro.Core": "[3.0.0-beta1, 3.0.0-beta1]",
+          "Caliburn.Micro.Core": "[3.0.0-beta2, 3.0.0-beta2]",
           "Xamarin.Forms": "[1.4.2.6355, )"
         },
         "compile": {
@@ -3364,7 +3372,7 @@
           "lib/portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10/Caliburn.Micro.Platform.Xamarin.Forms.dll": {}
         }
       },
-      "Microsoft.ApplicationInsights/1.2.3": {
+      "Microsoft.ApplicationInsights/2.0.0-beta3": {
         "compile": {
           "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.dll": {}
         },
@@ -3372,9 +3380,9 @@
           "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.dll": {}
         }
       },
-      "Microsoft.ApplicationInsights.PersistenceChannel/1.2.3": {
+      "Microsoft.ApplicationInsights.PersistenceChannel/2.0.0-beta3": {
         "dependencies": {
-          "Microsoft.ApplicationInsights": "[1.2.3, )"
+          "Microsoft.ApplicationInsights": "[2.0.0-beta3, )"
         },
         "compile": {
           "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.PersistenceChannel.dll": {}
@@ -3620,6 +3628,16 @@
         },
         "runtime": {
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
+        }
+      },
+      "Microsoft.Xaml.Behaviors.Uwp.Managed/1.0.2": {
+        "compile": {
+          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
+          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
+          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
         }
       },
       "System.AppContext/4.0.0": {
@@ -4990,7 +5008,7 @@
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xamarin.Forms/2.0.0.6484": {
+      "Xamarin.Forms/2.0.0.6487": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.dll": {},
@@ -5006,24 +5024,20 @@
       }
     },
     "UAP,Version=v10.0/win10-x64": {
-      "Caliburn.Micro/3.0.0-beta1": {
+      "Caliburn.Micro/3.0.0-beta2": {
         "dependencies": {
-          "Caliburn.Micro.Core": "[3.0.0-beta1, 3.0.0-beta1]"
+          "Microsoft.Xaml.Behaviors.Uwp.Managed": "[1.0.2, )"
         },
         "compile": {
           "lib/uap10.0/Caliburn.Micro.Platform.Core.dll": {},
-          "lib/uap10.0/Caliburn.Micro.Platform.UWP.dll": {},
-          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
-          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
+          "lib/uap10.0/Caliburn.Micro.Platform.UWP.dll": {}
         },
         "runtime": {
           "lib/uap10.0/Caliburn.Micro.Platform.Core.dll": {},
-          "lib/uap10.0/Caliburn.Micro.Platform.UWP.dll": {},
-          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
-          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
+          "lib/uap10.0/Caliburn.Micro.Platform.UWP.dll": {}
         }
       },
-      "Caliburn.Micro.Core/3.0.0-beta1": {
+      "Caliburn.Micro.Core/3.0.0-beta2": {
         "compile": {
           "lib/portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10+uap10.0/Caliburn.Micro.dll": {}
         },
@@ -5031,9 +5045,9 @@
           "lib/portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10+uap10.0/Caliburn.Micro.dll": {}
         }
       },
-      "Caliburn.Micro.Xamarin.Forms/3.0.0-beta1": {
+      "Caliburn.Micro.Xamarin.Forms/3.0.0-beta2": {
         "dependencies": {
-          "Caliburn.Micro.Core": "[3.0.0-beta1, 3.0.0-beta1]",
+          "Caliburn.Micro.Core": "[3.0.0-beta2, 3.0.0-beta2]",
           "Xamarin.Forms": "[1.4.2.6355, )"
         },
         "compile": {
@@ -5043,7 +5057,7 @@
           "lib/portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10/Caliburn.Micro.Platform.Xamarin.Forms.dll": {}
         }
       },
-      "Microsoft.ApplicationInsights/1.2.3": {
+      "Microsoft.ApplicationInsights/2.0.0-beta3": {
         "compile": {
           "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.dll": {}
         },
@@ -5051,9 +5065,9 @@
           "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.dll": {}
         }
       },
-      "Microsoft.ApplicationInsights.PersistenceChannel/1.2.3": {
+      "Microsoft.ApplicationInsights.PersistenceChannel/2.0.0-beta3": {
         "dependencies": {
-          "Microsoft.ApplicationInsights": "[1.2.3, )"
+          "Microsoft.ApplicationInsights": "[2.0.0-beta3, )"
         },
         "compile": {
           "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.PersistenceChannel.dll": {}
@@ -5320,6 +5334,16 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
+      "Microsoft.Xaml.Behaviors.Uwp.Managed/1.0.2": {
+        "compile": {
+          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
+          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
+          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
+        }
+      },
       "System.AppContext/4.0.0": {
         "dependencies": {
           "System.Collections": "[4.0.0, )",
@@ -6702,7 +6726,7 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xamarin.Forms/2.0.0.6484": {
+      "Xamarin.Forms/2.0.0.6487": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.dll": {},
@@ -6718,24 +6742,20 @@
       }
     },
     "UAP,Version=v10.0/win10-x64-aot": {
-      "Caliburn.Micro/3.0.0-beta1": {
+      "Caliburn.Micro/3.0.0-beta2": {
         "dependencies": {
-          "Caliburn.Micro.Core": "[3.0.0-beta1, 3.0.0-beta1]"
+          "Microsoft.Xaml.Behaviors.Uwp.Managed": "[1.0.2, )"
         },
         "compile": {
           "lib/uap10.0/Caliburn.Micro.Platform.Core.dll": {},
-          "lib/uap10.0/Caliburn.Micro.Platform.UWP.dll": {},
-          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
-          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
+          "lib/uap10.0/Caliburn.Micro.Platform.UWP.dll": {}
         },
         "runtime": {
           "lib/uap10.0/Caliburn.Micro.Platform.Core.dll": {},
-          "lib/uap10.0/Caliburn.Micro.Platform.UWP.dll": {},
-          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
-          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
+          "lib/uap10.0/Caliburn.Micro.Platform.UWP.dll": {}
         }
       },
-      "Caliburn.Micro.Core/3.0.0-beta1": {
+      "Caliburn.Micro.Core/3.0.0-beta2": {
         "compile": {
           "lib/portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10+uap10.0/Caliburn.Micro.dll": {}
         },
@@ -6743,9 +6763,9 @@
           "lib/portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10+uap10.0/Caliburn.Micro.dll": {}
         }
       },
-      "Caliburn.Micro.Xamarin.Forms/3.0.0-beta1": {
+      "Caliburn.Micro.Xamarin.Forms/3.0.0-beta2": {
         "dependencies": {
-          "Caliburn.Micro.Core": "[3.0.0-beta1, 3.0.0-beta1]",
+          "Caliburn.Micro.Core": "[3.0.0-beta2, 3.0.0-beta2]",
           "Xamarin.Forms": "[1.4.2.6355, )"
         },
         "compile": {
@@ -6755,7 +6775,7 @@
           "lib/portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10/Caliburn.Micro.Platform.Xamarin.Forms.dll": {}
         }
       },
-      "Microsoft.ApplicationInsights/1.2.3": {
+      "Microsoft.ApplicationInsights/2.0.0-beta3": {
         "compile": {
           "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.dll": {}
         },
@@ -6763,9 +6783,9 @@
           "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.dll": {}
         }
       },
-      "Microsoft.ApplicationInsights.PersistenceChannel/1.2.3": {
+      "Microsoft.ApplicationInsights.PersistenceChannel/2.0.0-beta3": {
         "dependencies": {
-          "Microsoft.ApplicationInsights": "[1.2.3, )"
+          "Microsoft.ApplicationInsights": "[2.0.0-beta3, )"
         },
         "compile": {
           "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.PersistenceChannel.dll": {}
@@ -7011,6 +7031,16 @@
         },
         "runtime": {
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
+        }
+      },
+      "Microsoft.Xaml.Behaviors.Uwp.Managed/1.0.2": {
+        "compile": {
+          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
+          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
+          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
         }
       },
       "System.AppContext/4.0.0": {
@@ -8381,7 +8411,7 @@
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xamarin.Forms/2.0.0.6484": {
+      "Xamarin.Forms/2.0.0.6487": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.dll": {},
@@ -8397,24 +8427,20 @@
       }
     },
     "UAP,Version=v10.0/win10-x86": {
-      "Caliburn.Micro/3.0.0-beta1": {
+      "Caliburn.Micro/3.0.0-beta2": {
         "dependencies": {
-          "Caliburn.Micro.Core": "[3.0.0-beta1, 3.0.0-beta1]"
+          "Microsoft.Xaml.Behaviors.Uwp.Managed": "[1.0.2, )"
         },
         "compile": {
           "lib/uap10.0/Caliburn.Micro.Platform.Core.dll": {},
-          "lib/uap10.0/Caliburn.Micro.Platform.UWP.dll": {},
-          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
-          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
+          "lib/uap10.0/Caliburn.Micro.Platform.UWP.dll": {}
         },
         "runtime": {
           "lib/uap10.0/Caliburn.Micro.Platform.Core.dll": {},
-          "lib/uap10.0/Caliburn.Micro.Platform.UWP.dll": {},
-          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
-          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
+          "lib/uap10.0/Caliburn.Micro.Platform.UWP.dll": {}
         }
       },
-      "Caliburn.Micro.Core/3.0.0-beta1": {
+      "Caliburn.Micro.Core/3.0.0-beta2": {
         "compile": {
           "lib/portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10+uap10.0/Caliburn.Micro.dll": {}
         },
@@ -8422,9 +8448,9 @@
           "lib/portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10+uap10.0/Caliburn.Micro.dll": {}
         }
       },
-      "Caliburn.Micro.Xamarin.Forms/3.0.0-beta1": {
+      "Caliburn.Micro.Xamarin.Forms/3.0.0-beta2": {
         "dependencies": {
-          "Caliburn.Micro.Core": "[3.0.0-beta1, 3.0.0-beta1]",
+          "Caliburn.Micro.Core": "[3.0.0-beta2, 3.0.0-beta2]",
           "Xamarin.Forms": "[1.4.2.6355, )"
         },
         "compile": {
@@ -8434,7 +8460,7 @@
           "lib/portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10/Caliburn.Micro.Platform.Xamarin.Forms.dll": {}
         }
       },
-      "Microsoft.ApplicationInsights/1.2.3": {
+      "Microsoft.ApplicationInsights/2.0.0-beta3": {
         "compile": {
           "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.dll": {}
         },
@@ -8442,9 +8468,9 @@
           "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.dll": {}
         }
       },
-      "Microsoft.ApplicationInsights.PersistenceChannel/1.2.3": {
+      "Microsoft.ApplicationInsights.PersistenceChannel/2.0.0-beta3": {
         "dependencies": {
-          "Microsoft.ApplicationInsights": "[1.2.3, )"
+          "Microsoft.ApplicationInsights": "[2.0.0-beta3, )"
         },
         "compile": {
           "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.PersistenceChannel.dll": {}
@@ -8711,6 +8737,16 @@
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
         }
       },
+      "Microsoft.Xaml.Behaviors.Uwp.Managed/1.0.2": {
+        "compile": {
+          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
+          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
+          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
+        }
+      },
       "System.AppContext/4.0.0": {
         "dependencies": {
           "System.Collections": "[4.0.0, )",
@@ -10093,7 +10129,7 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xamarin.Forms/2.0.0.6484": {
+      "Xamarin.Forms/2.0.0.6487": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.dll": {},
@@ -10109,24 +10145,20 @@
       }
     },
     "UAP,Version=v10.0/win10-x86-aot": {
-      "Caliburn.Micro/3.0.0-beta1": {
+      "Caliburn.Micro/3.0.0-beta2": {
         "dependencies": {
-          "Caliburn.Micro.Core": "[3.0.0-beta1, 3.0.0-beta1]"
+          "Microsoft.Xaml.Behaviors.Uwp.Managed": "[1.0.2, )"
         },
         "compile": {
           "lib/uap10.0/Caliburn.Micro.Platform.Core.dll": {},
-          "lib/uap10.0/Caliburn.Micro.Platform.UWP.dll": {},
-          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
-          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
+          "lib/uap10.0/Caliburn.Micro.Platform.UWP.dll": {}
         },
         "runtime": {
           "lib/uap10.0/Caliburn.Micro.Platform.Core.dll": {},
-          "lib/uap10.0/Caliburn.Micro.Platform.UWP.dll": {},
-          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
-          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
+          "lib/uap10.0/Caliburn.Micro.Platform.UWP.dll": {}
         }
       },
-      "Caliburn.Micro.Core/3.0.0-beta1": {
+      "Caliburn.Micro.Core/3.0.0-beta2": {
         "compile": {
           "lib/portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10+uap10.0/Caliburn.Micro.dll": {}
         },
@@ -10134,9 +10166,9 @@
           "lib/portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10+uap10.0/Caliburn.Micro.dll": {}
         }
       },
-      "Caliburn.Micro.Xamarin.Forms/3.0.0-beta1": {
+      "Caliburn.Micro.Xamarin.Forms/3.0.0-beta2": {
         "dependencies": {
-          "Caliburn.Micro.Core": "[3.0.0-beta1, 3.0.0-beta1]",
+          "Caliburn.Micro.Core": "[3.0.0-beta2, 3.0.0-beta2]",
           "Xamarin.Forms": "[1.4.2.6355, )"
         },
         "compile": {
@@ -10146,7 +10178,7 @@
           "lib/portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10/Caliburn.Micro.Platform.Xamarin.Forms.dll": {}
         }
       },
-      "Microsoft.ApplicationInsights/1.2.3": {
+      "Microsoft.ApplicationInsights/2.0.0-beta3": {
         "compile": {
           "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.dll": {}
         },
@@ -10154,9 +10186,9 @@
           "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.dll": {}
         }
       },
-      "Microsoft.ApplicationInsights.PersistenceChannel/1.2.3": {
+      "Microsoft.ApplicationInsights.PersistenceChannel/2.0.0-beta3": {
         "dependencies": {
-          "Microsoft.ApplicationInsights": "[1.2.3, )"
+          "Microsoft.ApplicationInsights": "[2.0.0-beta3, )"
         },
         "compile": {
           "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.PersistenceChannel.dll": {}
@@ -10402,6 +10434,16 @@
         },
         "runtime": {
           "lib/dotnet/Microsoft.Win32.Primitives.dll": {}
+        }
+      },
+      "Microsoft.Xaml.Behaviors.Uwp.Managed/1.0.2": {
+        "compile": {
+          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
+          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
+          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
         }
       },
       "System.AppContext/4.0.0": {
@@ -11772,7 +11814,7 @@
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xamarin.Forms/2.0.0.6484": {
+      "Xamarin.Forms/2.0.0.6487": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.dll": {},
@@ -11789,8 +11831,8 @@
     }
   },
   "libraries": {
-    "Caliburn.Micro/3.0.0-beta1": {
-      "sha512": "L3Und/cIKkl2ldatTcN/HnB+wl+K1pV4Qisx03e1Upsg3HV5M7wvncZDLwmNizbMjInKlPEuSHHIbb+wWyG4LA==",
+    "Caliburn.Micro/3.0.0-beta2": {
+      "sha512": "rf40GoX0Q8zc7p+KoIybY0vynSrAFHFrMDbK4fvBLZLP7N3nSm1AymzEH9zvdxZjSyW9eWvJcqmmQEAgHeJcKQ==",
       "type": "Package",
       "files": [
         "[Content_Types].xml",
@@ -11822,8 +11864,6 @@
         "lib/uap10.0/Caliburn.Micro.Platform.UWP.pri",
         "lib/uap10.0/Caliburn.Micro.Platform.UWP.XML",
         "lib/uap10.0/Caliburn.Micro.Platform.UWP/Properties/Caliburn.Micro.Platform.UWP.rd.xml",
-        "lib/uap10.0/Microsoft.Xaml.Interactions.dll",
-        "lib/uap10.0/Microsoft.Xaml.Interactivity.dll",
         "lib/win81/Caliburn.Micro.Platform.Core.dll",
         "lib/win81/Caliburn.Micro.Platform.Core.xml",
         "lib/win81/Caliburn.Micro.Platform.dll",
@@ -11847,11 +11887,11 @@
         "lib/Xamarin.iOS10/Caliburn.Micro.Platform.Core.xml",
         "lib/Xamarin.iOS10/Caliburn.Micro.Platform.dll",
         "lib/Xamarin.iOS10/Caliburn.Micro.Platform.xml",
-        "package/services/metadata/core-properties/42a9f168deff4e1ca0dcbecdbcea8c33.psmdcp"
+        "package/services/metadata/core-properties/14314bd46366446293893612c8762e6f.psmdcp"
       ]
     },
-    "Caliburn.Micro.Core/3.0.0-beta1": {
-      "sha512": "CDzCIJQ9PKvDUo0gkuH+vfkntmcfBtVlzRPSnHbdJ1tX2Jm/TN0bsIb7GwpUnUnvusfo3WzOQb/3bHjIwcfYLg==",
+    "Caliburn.Micro.Core/3.0.0-beta2": {
+      "sha512": "GQEFMq99TW4F9d7l7OMgnp35yytruwV80+BQlap0DbMqWQ/Fn9G/wSj4SzrOlWvNW6JdYKjZdPAcsfF8O/lzSw==",
       "type": "Package",
       "files": [
         "[Content_Types].xml",
@@ -11865,11 +11905,11 @@
         "lib/portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10+uap10.0/Caliburn.Micro.XML",
         "lib/sl5/Caliburn.Micro.dll",
         "lib/sl5/Caliburn.Micro.XML",
-        "package/services/metadata/core-properties/c589ba5bbed64405a1d68e22228fc9a6.psmdcp"
+        "package/services/metadata/core-properties/ac492022aace4cac91c04b78c70fbfae.psmdcp"
       ]
     },
-    "Caliburn.Micro.Xamarin.Forms/3.0.0-beta1": {
-      "sha512": "F6JnAa/PL8EfV2Y54dHK4IXP56QUHzF5j0fmAstYZ42bPXaCkaL5hoypLAmhKYANTfYMjfldxTBNIGfvEXtArQ==",
+    "Caliburn.Micro.Xamarin.Forms/3.0.0-beta2": {
+      "sha512": "UdwYr7Yv32lp1J1OOeMVORECZhMtiVbDS/9TqNLr8ATsdi4Ju8DiTVQWsQlbqskOhG7B/9DdVjhZFiAF0SZO9w==",
       "type": "Package",
       "files": [
         "[Content_Types].xml",
@@ -11877,29 +11917,33 @@
         "Caliburn.Micro.Xamarin.Forms.nuspec",
         "lib/portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10/Caliburn.Micro.Platform.Xamarin.Forms.dll",
         "lib/portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10/Caliburn.Micro.Platform.Xamarin.Forms.xml",
-        "package/services/metadata/core-properties/db853de6d03b47d18f92d47f3914858e.psmdcp"
+        "package/services/metadata/core-properties/fd3eb8cd489c4dcc995795b2089d84ad.psmdcp"
       ]
     },
-    "Microsoft.ApplicationInsights/1.2.3": {
-      "sha512": "a34atobxpucCTTX9VCD7aIu6Ydzry+Va7TxK2tTQcfaMvefGW4kUKtg9GHKIn19IaXe+A4oZt/GBqsOt5vQrBA==",
+    "Microsoft.ApplicationInsights/2.0.0-beta3": {
+      "sha512": "MTEOYjgmn6gFVp4d63R8dBkQI4n9bj7lLoW4OaWeRnJ+2yqwMEOS0Mz6z+qKP8ve3LeoUTw4Ygtr9oCaHJN+SQ==",
       "type": "Package",
       "files": [
         "[Content_Types].xml",
         "_rels/.rels",
+        "lib/dnxcore50/Microsoft.ApplicationInsights.dll",
+        "lib/dnxcore50/Microsoft.ApplicationInsights.XML",
         "lib/net40/Microsoft.ApplicationInsights.dll",
         "lib/net40/Microsoft.ApplicationInsights.XML",
         "lib/net45/Microsoft.ApplicationInsights.dll",
         "lib/net45/Microsoft.ApplicationInsights.XML",
+        "lib/net46/Microsoft.ApplicationInsights.dll",
+        "lib/net46/Microsoft.ApplicationInsights.XML",
         "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.dll",
         "lib/portable-win81+wpa81/Microsoft.ApplicationInsights.XML",
         "lib/wp8/Microsoft.ApplicationInsights.dll",
         "lib/wp8/Microsoft.ApplicationInsights.XML",
         "Microsoft.ApplicationInsights.nuspec",
-        "package/services/metadata/core-properties/3b36eef276524f5d883c618d5fd8c500.psmdcp"
+        "package/services/metadata/core-properties/9dd1daaa0725478eb5ea0dffbe325a57.psmdcp"
       ]
     },
-    "Microsoft.ApplicationInsights.PersistenceChannel/1.2.3": {
-      "sha512": "5MGcvPQVaGlGyAVh9adg4sSkIVSYDKn+H3+YnZa9hi1gH/g6UsRt4HLc8vp/IxjlbmXbJyAB7dYJV/NHmAGAgA==",
+    "Microsoft.ApplicationInsights.PersistenceChannel/2.0.0-beta3": {
+      "sha512": "1km42tFTsuNSDe3wEN88r9tzlw5uTbFAl/KjkZtC2w13Tc2lA92tJHM7mSWv0zFt9w6Bx7m3km5yMECcYhzOLw==",
       "type": "Package",
       "files": [
         "[Content_Types].xml",
@@ -11913,7 +11957,7 @@
         "lib/wp8/Microsoft.ApplicationInsights.PersistenceChannel.dll",
         "lib/wp8/Microsoft.ApplicationInsights.PersistenceChannel.XML",
         "Microsoft.ApplicationInsights.PersistenceChannel.nuspec",
-        "package/services/metadata/core-properties/f973733421c14c3594986b3f2c22213a.psmdcp"
+        "package/services/metadata/core-properties/460690bead5947ebb831d7d2a4912dad.psmdcp"
       ]
     },
     "Microsoft.ApplicationInsights.WindowsApps/1.1.0": {
@@ -12583,6 +12627,26 @@
         "ref/net46/Microsoft.Win32.Primitives.dll",
         "ref/xamarinios10/_._",
         "ref/xamarinmac20/_._"
+      ]
+    },
+    "Microsoft.Xaml.Behaviors.Uwp.Managed/1.0.2": {
+      "sha512": "naPuhYn3Igeohe8MVQhqzNRZo2Xt0D6+KpDbaaODSchqjsyj9lUqReKDLq9s5ffOJZehELjMIIW6Fx8AJOrgQw==",
+      "type": "Package",
+      "files": [
+        "[Content_Types].xml",
+        "_rels/.rels",
+        "lib/uap10.0/Design/Microsoft.Xaml.Interactions.Design.dll",
+        "lib/uap10.0/Design/Microsoft.Xaml.Interactivity.Design.dll",
+        "lib/uap10.0/Microsoft.Xaml.Interactions.dll",
+        "lib/uap10.0/Microsoft.Xaml.Interactions.pri",
+        "lib/uap10.0/Microsoft.Xaml.Interactions.xml",
+        "lib/uap10.0/Microsoft.Xaml.Interactions/Properties/Microsoft.Xaml.Interactions.rd.xml",
+        "lib/uap10.0/Microsoft.Xaml.Interactivity.dll",
+        "lib/uap10.0/Microsoft.Xaml.Interactivity.pri",
+        "lib/uap10.0/Microsoft.Xaml.Interactivity.xml",
+        "lib/uap10.0/Microsoft.Xaml.Interactivity/Properties/Microsoft.Xaml.Interactivity.rd.xml",
+        "Microsoft.Xaml.Behaviors.Uwp.Managed.nuspec",
+        "package/services/metadata/core-properties/e091ec76f6a6467e90828900723ae8af.psmdcp"
       ]
     },
     "System.AppContext/4.0.0": {
@@ -15280,8 +15344,8 @@
         "System.Xml.XmlSerializer.nuspec"
       ]
     },
-    "Xamarin.Forms/2.0.0.6484": {
-      "sha512": "ZE9oH3uZY1gUwFiBB4Wr9y2CD73nWgJTHkSx2EZC9MrchSevV5SKTeP4UG4iy3NyuAPtXzBFgXfKCtRIN7ZR/g==",
+    "Xamarin.Forms/2.0.0.6487": {
+      "sha512": "d+yDJTprJbdeN67fQ5lhKaGGeyL+6mgE8S7uxFyfBMEn37LCmukIdDoUenNjhqo6TXbUDnlcRw75eibtj0YJFA==",
       "type": "Package",
       "files": [
         "[Content_Types].xml",
@@ -15374,7 +15438,7 @@
         "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll",
         "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll",
         "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.xml",
-        "package/services/metadata/core-properties/47fca8afb46f49089b9401c3251129cf.psmdcp",
+        "package/services/metadata/core-properties/e04bf451162c43c58d5e43b7a8a527e5.psmdcp",
         "tools/init.ps1",
         "tools/Xamarin.Forms.Core.Design.dll",
         "tools/Xamarin.Forms.Xaml.Design.dll",
@@ -15384,13 +15448,13 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "Caliburn.Micro >= 3.0.0-beta1",
-      "Caliburn.Micro.Xamarin.Forms >= 3.0.0-beta1",
-      "Microsoft.ApplicationInsights >= 1.2.3",
-      "Microsoft.ApplicationInsights.PersistenceChannel >= 1.2.3",
+      "Caliburn.Micro >= 3.0.0-beta2",
+      "Caliburn.Micro.Xamarin.Forms >= 3.0.0-beta2",
+      "Microsoft.ApplicationInsights >= 2.0.0-beta3",
+      "Microsoft.ApplicationInsights.PersistenceChannel >= 2.0.0-beta3",
       "Microsoft.ApplicationInsights.WindowsApps >= 1.1.0",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.0.0",
-      "Xamarin.Forms >= 2.0.0.6484"
+      "Xamarin.Forms >= 2.0.0.6487"
     ],
     "UAP,Version=v10.0": []
   }

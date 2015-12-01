@@ -1,12 +1,12 @@
 ﻿{
   "dependencies": {
-    "Caliburn.Micro": "3.0.0-beta1",
-    "Caliburn.Micro.Xamarin.Forms": "3.0.0-beta1",
-    "Microsoft.ApplicationInsights": "1.2.3",
-    "Microsoft.ApplicationInsights.PersistenceChannel": "1.2.3",
+    "Caliburn.Micro": "3.0.0-beta2",
+    "Caliburn.Micro.Xamarin.Forms": "3.0.0-beta2",
+    "Microsoft.ApplicationInsights": "2.0.0-beta3",
+    "Microsoft.ApplicationInsights.PersistenceChannel": "2.0.0-beta3",
     "Microsoft.ApplicationInsights.WindowsApps": "1.1.0",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0",
-    "Xamarin.Forms": "2.0.0.6484"
+    "Xamarin.Forms": "2.0.0.6487"
   },
   "frameworks": {
     "uap10.0": {}
