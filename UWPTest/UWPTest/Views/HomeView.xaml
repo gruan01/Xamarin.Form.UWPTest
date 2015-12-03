@@ -4,6 +4,7 @@
              x:Class="UWPTest.Views.HomeView"
              Title="Home"
              >
-  <Label Text="Home" VerticalOptions="Center" HorizontalOptions="Center" />
+
+  <Button Text="Click" Command="{Binding BtnClickCmd}" />
 
 </ContentPage>

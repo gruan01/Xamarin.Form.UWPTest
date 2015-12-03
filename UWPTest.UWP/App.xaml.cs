@@ -25,6 +25,8 @@ namespace UWPTest.UWP {
         public App() {
             InitializeComponent();
             this.UnhandledException += App_UnhandledException;
+
+            //var spy = FirstFloor.XamlSpy.Services.ServiceProvider.GetService<ClientService>();
         }
 
         private void App_UnhandledException(object sender, UnhandledExceptionEventArgs e) {

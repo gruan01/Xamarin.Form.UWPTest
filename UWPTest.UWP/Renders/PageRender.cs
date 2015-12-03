@@ -11,8 +11,6 @@ namespace UWPTest.UWP.Renders {
 
         protected override void OnElementChanged(ElementChangedEventArgs<Page> e) {
             base.OnElementChanged(e);
-
-            
         }
 
     }

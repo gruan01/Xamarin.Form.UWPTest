@@ -8,7 +8,8 @@ using System.Threading.Tasks;
 namespace UWPTest.ViewModels {
     public class TabViewModel : Screen {
 
-        public BindableCollection<Screen> Datas {
+        public BindableCollection<Screen> Datas
+        {
             get; set;
         }
 
@@ -21,11 +22,11 @@ namespace UWPTest.ViewModels {
         //    };
         //}
 
-        public TabViewModel() {
+        public TabViewModel(SimpleContainer container) {
             this.DisplayName = "Tabs";
             this.Datas = new BindableCollection<Screen>() {
-                    new HomeViewModel(),
-                    new ProductViewModel()
+                    container.GetInstance<HomeViewModel>(),
+                    container.GetInstance<ProductViewModel>()
                 };
         }
     }
