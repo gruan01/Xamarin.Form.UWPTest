@@ -14,7 +14,7 @@ namespace UWPTest.ViewModels {
 
 
         public MDIViewModel(SimpleContainer container) {
-            this.Master = container.GetInstance<SettingViewModel>();
+            this.Master = container.GetInstance<ProductViewModel>();
             this.Detail = container.GetInstance<TabViewModel>();
         }
     }

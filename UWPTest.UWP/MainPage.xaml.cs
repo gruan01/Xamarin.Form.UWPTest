@@ -23,6 +23,9 @@ namespace UWPTest.UWP {
     /// 可用于自身或导航至 Frame 内部的空白页。
     /// </summary>
     public partial class MainPage {
+
+        //private SplitView spv = null;
+
         public MainPage() {
             this.InitializeComponent();
 
@@ -36,6 +39,36 @@ namespace UWPTest.UWP {
                 statusBar.BackgroundColor = Color.FromArgb(0xff, 0x00, 0x97, 0xa7);//#0097A7
                 statusBar.BackgroundOpacity = 1;
             }
+
+            this.Loaded += MainPage_Loaded;
+        }
+
+        private void MainPage_Loaded(object sender, Windows.UI.Xaml.RoutedEventArgs e) {
+            var btn = this.FindChildControl<ToggleButton>("splitViewToggle");
+            btn.Click += Btn_Click;
+
+            var backBtn = this.FindChildControl<ToggleButton>("backToggle");
+            backBtn.Click += BackBtn_Click;
+
+            //this.spv = this.FindChildControl<SplitView>("masterDetailSplitView");
+        }
+
+        private async void BackBtn_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e) {
+            //var rootFrame = Window.Current.Content as Frame;
+
+            //if (rootFrame.CanGoBack) {
+            //    rootFrame.GoBack();
+            //}
+
+            await UWPTest.App.Current.MainPage.Navigation.PopAsync();
+        }
+
+        private void Btn_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e) {
+            var spv = this.FindChildControl<SplitView>("masterDetailSplitView");
+            spv.IsPaneOpen = !spv.IsPaneOpen;
+            //spv.Pane.InvalidateMeasure();
+            //spv.Pane.InvalidateArrange();
+            //spv.UpdateLayout();
         }
     }
 }

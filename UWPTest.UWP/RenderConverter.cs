@@ -13,6 +13,7 @@ namespace UWPTest.UWP {
                 return null;
 
             var render = Platform.GetRenderer((Xamarin.Forms.VisualElement)value);
+            //((Xamarin.Forms.VisualElement)value).Layout(new Xamarin.Forms.Rectangle(0, 0, 300, 300));
             return render.ContainerElement;
         }
 

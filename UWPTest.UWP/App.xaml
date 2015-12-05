@@ -2,16 +2,12 @@
     x:Class="UWPTest.UWP.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:Discuz.UWP"
+    xmlns:local="using:UWPTest.UWP"
     xmlns:cm="using:Caliburn.Micro"
     RequestedTheme="Dark">
 
     <cm:CaliburnApplication.Resources>
-        <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="./Xamarin.xaml" />
-            </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>
+        <ResourceDictionary Source="./Xamarin.xaml" />
     </cm:CaliburnApplication.Resources>
 
 </cm:CaliburnApplication>
