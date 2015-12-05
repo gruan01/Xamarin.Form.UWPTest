@@ -2,7 +2,7 @@
     x:Class="UWPTest.UWP.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:Notification.UWP"
+    xmlns:local="using:UWPTest.UWP"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:forms="using:Xamarin.Forms.Platform.UWP"
@@ -12,6 +12,8 @@
 
     <forms:WindowsPage.Resources>
         <ResourceDictionary>
+
+            <local:RenderConverter x:Key="renderConverter" />
 
             <ControlTemplate x:Key="SplitViewTogglePaneButtonTemplate"
                          TargetType="ToggleButton">
@@ -107,7 +109,7 @@
                                     <ToggleButton x:Name="splitViewToggle" Style="{StaticResource SplitViewTogglePaneButtonStyle}" Grid.Row="0" Grid.Column="0" />
                                     <TextBlock Name="title" Text="{Binding Title}" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" />
                                 </Grid>
-                               
+
                                 <ContentPresenter x:Name="presenter" Grid.Row="1" Grid.ColumnSpan="2" />
 
                             </Grid>
@@ -116,8 +118,40 @@
                 </Setter>
             </Style>
 
-            <Style TargetType="xm:MasterDetailControl">
-                <!--<Setter Target="CommandBar" Property="Visibility" Value="Collapsed" />-->
+            <!--<Style TargetType="xm:MasterDetailControl">
+                -->
+            <!--<Setter Target="CommandBar" Property="Visibility" Value="Collapsed" />-->
+            <!--
+            </Style>-->
+
+
+            <Style  TargetType="xm:MasterDetailControl">
+                <Style.Setters>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate>
+                                <SplitView>
+                                    <SplitView.Pane>
+                                        <Grid x:Name="PaneRoot">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="auto" />
+                                                <RowDefinition />
+                                            </Grid.RowDefinitions>
+                                            <StackPanel Grid.Row="0" Orientation="Horizontal">
+                                                <Button Name="PaneTogglePane" Style="{StaticResource PaneButton}" />
+                                                <TextBlock Text="{Binding Title}" />
+                                            </StackPanel>
+                                            <ContentPresenter x:Name="MasterPresenter" Grid.Row="1" Content="{Binding Master, Converter={StaticResource renderConverter}}" />
+                                        </Grid>
+                                    </SplitView.Pane>
+
+                                    <ContentPresenter x:Name="DetailPresenter" Content="{Binding Detail, Converter={StaticResource renderConverter}}" />
+
+                                </SplitView>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style.Setters>
             </Style>
         </ResourceDictionary>
     </forms:WindowsPage.Resources>

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UWPTest.UWP.Renders;
 using Windows.UI;
+using Windows.UI.Xaml.Markup;
 using Windows.UI.Xaml.Media;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.UWP;
@@ -19,6 +20,5 @@ namespace UWPTest.UWP.Renders {
             //this.Control.MasterTitleVisibility = Windows.UI.Xaml.Visibility.Visible;
             //this.Control.ToolbarBackground = new SolidColorBrush(Colors.Purple);
         }
-
     }
 }
