@@ -119,17 +119,28 @@
         </Setter>
     </Style>
 
-    <Style  TargetType="xm:MasterDetailControl">
+    <Style TargetType="xm:MasterDetailControl">
         <Style.Setters>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate>
-                        <SplitView x:Name="masterDetailSplitView" OpenPaneLength="300">
+                        <SplitView 
+                            x:Name="masterDetailSplitView" 
+                            OpenPaneLength="300"
+                            >
                             <SplitView.Pane>
-                                <ContentPresenter x:Name="MasterPresenter" Grid.Row="1" Content="{Binding Master, Converter={StaticResource renderConverter}}" />
+                                <Grid>
+                                    <ContentPresenter 
+                                    x:Name="MasterPresenter"
+                                    HorizontalAlignment="Stretch"
+                                        VerticalAlignment="Stretch"
+                                    Content="{Binding Master, Converter={StaticResource rc}}" />
+                                </Grid>
                             </SplitView.Pane>
 
-                            <ContentPresenter x:Name="DetailPresenter" Content="{Binding Detail, Converter={StaticResource renderConverter}}" />
+                            <ContentPresenter 
+                                x:Name="DetailPresenter" 
+                                Content="{Binding Detail, Converter={StaticResource renderConverter}}" />
 
                         </SplitView>
                     </ControlTemplate>

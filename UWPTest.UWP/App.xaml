@@ -5,9 +5,19 @@
     xmlns:local="using:UWPTest.UWP"
     xmlns:cm="using:Caliburn.Micro"
     RequestedTheme="Dark">
-
+    
     <cm:CaliburnApplication.Resources>
-        <ResourceDictionary Source="./Xamarin.xaml" />
+        <ResourceDictionary Source="Xamarin.xaml">
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Pivot.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+        <!--<ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Xamarin.xaml" />
+                <ResourceDictionary Source="Pivot.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>-->
     </cm:CaliburnApplication.Resources>
 
 </cm:CaliburnApplication>

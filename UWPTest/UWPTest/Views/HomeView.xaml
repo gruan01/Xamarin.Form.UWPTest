@@ -5,6 +5,8 @@
              Title="Home"
              >
 
-  <Button Text="Click" Command="{Binding BtnClickCmd}" />
+  <StackLayout>
+    <Button Text="Click" Command="{Binding BtnClickCmd}" />
+  </StackLayout>
 
 </ContentPage>

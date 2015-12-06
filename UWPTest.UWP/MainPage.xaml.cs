@@ -66,9 +66,6 @@ namespace UWPTest.UWP {
         private void Btn_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e) {
             var spv = this.FindChildControl<SplitView>("masterDetailSplitView");
             spv.IsPaneOpen = !spv.IsPaneOpen;
-            //spv.Pane.InvalidateMeasure();
-            //spv.Pane.InvalidateArrange();
-            //spv.UpdateLayout();
         }
     }
 }

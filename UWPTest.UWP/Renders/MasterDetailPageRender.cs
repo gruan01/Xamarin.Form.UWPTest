@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,6 +21,13 @@ namespace UWPTest.UWP.Renders {
 
             //this.Control.MasterTitleVisibility = Windows.UI.Xaml.Visibility.Visible;
             //this.Control.ToolbarBackground = new SolidColorBrush(Colors.Purple);
+
+            this.Control.Master.SizeChanged += Master_SizeChanged;
+        }
+
+        private void Master_SizeChanged(object sender, Windows.UI.Xaml.SizeChangedEventArgs e) {
+            // if not do this , master page content not show
+            this.Element.Master.Layout(new Rectangle(0, 0, e.NewSize.Width, e.NewSize.Height));
         }
     }
 }
